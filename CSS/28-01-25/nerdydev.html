@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Transition Example</title>
+    <style>
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          
+            background-color: #f0f0f0; 
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+           transition: transform 2s linear;   
+        } 
+
+        .box:hover {
+            transform: translateX(300px); 
+           background-color: blue;
+        }  */
+        @import "https://unpkg.com/open-props/easings.min.css";
+        .btn {
+  
+            transition: transform 1s var(--ease-bounce-5);
+  &:hover {
+    transform: scale(2);
+    transition-timing-function: var(--ease-spring-8);
+  }
+}
+</style>
+</head>
+<body>
+
+    <!-- <div class="box"></div>  -->
+    <!-- The box element -->
+    <button class="btn">Demo</button> 
+
+</body>
+</html>

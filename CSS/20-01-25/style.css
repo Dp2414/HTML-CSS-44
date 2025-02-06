@@ -1,0 +1,59 @@
+
+body{
+    background-color: #FFC72C;;
+}
+
+.card
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 300px;
+    
+    margin:200px auto;
+    box-shadow:5px 5px;
+}
+.img1{
+    width:300px;
+    border-radius: 10px;
+    
+
+}
+.btn{
+    background-color: #FFC72C;
+padding: 5px 10px ;
+margin-top: 10px;
+border: none;
+cursor: pointer;
+font-weight: bolder;
+font-size:15px;
+
+}
+h1{
+   font-weight: bold;
+   font-size: 20px;
+}
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+}
+.img2{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.p2{
+    color: grey;
+    font-size:medium;
+}
+p{
+    font-size:15px;   
+}
+h3{
+    font-size: medium;
+}

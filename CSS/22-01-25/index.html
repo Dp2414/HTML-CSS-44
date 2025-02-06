@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns:repeat(autofill,minmax(200px,1fr)); */
+       grid-template-columns: repeat(3,1fr); /*it creates 4colums with 1fr */
+        gap: 10px;
+      grid-auto-rows: minmax(100px,auto);
+      grid-auto-columns: minmax(100px,auto);
+      
+      }
+      .items {
+        border: 3px solid red;
+        background-color: chartreuse;
+        display: grid;
+        
+      }
+      .items1 {
+        grid-column: 1/4;
+      }
+      /* .items {
+        display: grid;
+      } */
+      .item-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        
+       
+
+      }
+      .nested-items{
+        display: grid;
+        border: 2px solid black;
+        background-color: yellow;
+        place-items: center;
+      
+      }
+      .center{
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- .items.items$*5{box$} -->
+      <div class="items items1 item-container">
+      <!-- .nested-items{Box inside box $}*3 -->
+      <div class="nested-items">Box inside box 1</div>
+      <div class="nested-items">Box inside box 2</div>
+      <div class="nested-items">Box inside box 3</div>
+      </div>
+      <div class="items items2 center">box2</div>
+      <div class="items items3 center">box3</div>
+      <div class="items items4 center">box4</div>
+      <div class="items items5 center">box5</div>
+    </div>
+  </body>
+</html>

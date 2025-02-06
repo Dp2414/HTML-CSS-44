@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    float: left; 
+    margin-right:40px;
+    margin-left: 20px;
+    width: 25%;
+}
+.cards{
+    border:1px solid;
+    /* display: flow-root; */
+}
+.card{
+    border:1px solid red;
+}

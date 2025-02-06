@@ -1,0 +1,144 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+
+} */
+ *{
+    margin: 0;
+ }
+/* position: relative;
+    top: 50%;
+    left: 50%;
+    transition: translate(-50%,-50%); */
+    /* animation-timing-function: ; */
+/* div{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   
+    animation:bounce;
+    animation-duration: 2s;
+    
+    animation-delay:2s;
+    animation-iteration-count:infinite;
+    position: relative;
+   
+}  */
+
+
+/* @keyframes smooth{
+    0%{
+background-color: yellow;
+position: absolute;
+top: 0;
+left: 0;
+    }
+    50%{
+background-color: green;
+position: absolute;
+top: 50%;
+    }
+    100%{
+background-color: brown;
+    }
+} */
+/* @keyframes movingball{
+    0%{
+       
+      
+        top: 0;
+        left: 0;
+            }
+            25%{
+             
+                top: 0;
+                left: 400px;
+            }
+            50%{
+        left: 400px;
+        top: 500px;
+     
+            }
+            75%{
+                left: 0%;
+                top: 500px;
+     
+            }
+            100%{
+               top: 0;
+               left: 0;
+            }
+} */
+ /* @keyframes bounce{
+    0%{
+      
+        left:0;
+        top: 0;
+    }
+   50%{
+    
+        left: 0;
+        top: 500px;
+    }
+    100%{
+        left:0;
+        top: 0;
+    }
+ } */
+
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: beat 1.3s infinite;
+}
+
+ div:before,
+div:after {
+
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    
+    
+    
+} 
+ div:before{
+    top: -50px;
+    left: 0px;
+}
+
+
+div:after {
+    left: 50px;
+   
+}
+
+@keyframes beat {
+
+    0%,
+    100% {
+        transform: scale(1)rotate(-45deg) ;
+    }
+
+    50% {
+        transform: scale(1.3)rotate(-45deg) ;
+    }
+}   

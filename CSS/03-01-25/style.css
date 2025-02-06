@@ -1,0 +1,46 @@
+/* h1,span {
+     background-color: red;
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: blue; */ 
+     /* border-left: 5px solid black;
+    border-top: 3px solid blue;
+    border-right: 4px solid yellow;
+
+border-bottom: 3px solid green;  */
+/* short hand not available for border as it is invalid property in css */
+
+/* padding: 10px 20px 30px 40px; */
+/* padding-left: ;
+padding-right: ;
+padding-top: 45px;
+padding-bottom: 50px; */
+/* margin: 10px 20px 30px 40px;
+}
+padding:top right bottom left  */ 
+h1{
+    font-size: 60px;
+  
+    /* font-style:normal/oblique/italic;*/
+font-variant: small-caps;
+text-align: center;
+text-shadow: 1px 2px 5px  red;
+}
+p{
+    /* line-height: 100%; */
+    /* letter-spacing: 10px; (space btw letters) */
+/* word-spacing: 10px;(space btw words) */
+/* text-transform: capitalize(each word first letter get capitalized) */
+
+}
+a{
+    text-decoration:underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;
+/* we use none for removing line on the line-break */
+/* text-align: center; */
+/* text align works on block elements only
+ */
+}
+

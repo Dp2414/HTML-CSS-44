@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            perspective: 500px;
+        }
+        .box{
+width: 200px;
+height: 200px;
+border: 1px solid blue;
+        }
+        .box1{
+            background-color: yellow;
+        }
+        .box2{
+            background-color: red;
+            border: 1px solid blue;
+        }
+        .box1:hover{
+            transform: perspective(200px) rotateZ(360deg);
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="box1 box" style="  display: flex; justify-content: center; align-items: center;">2</div>
+  <div class="box2 box"></div>
+  <div class="box3 box"></div>
+  <div class="box4 box"></div>
+  <div class="box5 box"></div>
+  <div class="box6 box"></div>
+</div>
+</body>
+</html>

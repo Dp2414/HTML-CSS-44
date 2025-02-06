@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: green;
+            border: 5px solid black;
+           /* min-height: 300px; */
+           max-height:400px;
+        }
+       h1{
+        background: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 1px solid black;
+        background-color: red;
+        color: white;
+        text-align: center;
+        margin: 10px auto;
+        /* min-width: 500px; */
+         /* min -width it gives scroll bar if the content gets overflow */
+       max-width:100%;
+       /* max-width gives us perfect responsive page */
+       max-height: 10000px;
+       
+       }
+    </style>
+</head>
+<body>
+<div class="box">
+  <h1>height and width</h1>
+  <h1>Max-height</h1>
+  <h1>Min-height</h1>
+  <h1>Max-width</h1>  <!--max width will make the text or content responsive-->
+  <h1>Min-width</h1>
+   <!-- where in min width if we resize the page the conetents get cut over a period of time until specific given min width -->
+ <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam numquam totam illo. Veniam omnis quo, cum officia porro repellendus impedit, eligendi maxime distinctio deleniti fuga recusandae fugit eum aut.</h1>
+</div>
+</body>
+</html>

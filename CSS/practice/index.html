@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Document</title>
+
+    <style>
+      *{
+ 
+ font-family: sans-serif;
+ 
+ }
+ nav{
+     
+     background-color:white;
+     padding: 5px;
+  }
+  li{
+     margin-left: 260px;
+     list-style-type: none;
+     
+  }
+  
+ 
+ 
+ li>h1{
+     color: #424242;
+ }
+ span{
+     color: #00A5EC;
+ }
+ 
+ .container{
+     
+     background-color:#f7f7f7;
+ }
+ a{
+     text-decoration: none;
+     color:  #00A5EC;;
+ }
+ .img1{
+     width: 40px;
+ height: 40px;
+ }
+ 
+ h4{
+     color: #424242;
+ }
+ .add{
+     display: flex;
+      justify-content: flex-end;
+      gap:3px;
+      
+      padding-bottom: 15px;
+  }
+  .btn{
+     display: flex;
+     gap: 5px;
+     margin-right: 260px;
+     border: none;
+     background: #f7f7f7;
+     cursor: pointer;
+     padding: 20px;
+     margin-top:5px
+ }
+  .button-content{
+     display: flex; /* Use flexbox for alignment */
+     align-items: center;
+     gap: 10px;
+    
+ }
+ .cards,.lastrow{
+     display: flex;
+     gap: 20px;
+     justify-content: flex-start;
+     margin-left: 250px;
+     }
+     .card1,.card2{
+         background-color: white;
+         width: 250px;
+         height:300px;
+         
+         cursor: pointer;
+         border-radius: 10px;
+       /*we can also use grid*/
+     }
+ 
+ /*modifying horizontal line <hr>*/
+ .hr1{
+     opacity: 0.4;
+ }
+ /* .line{
+    color: rgb(255, 254, 254);
+    
+    width: 248px;
+    margin-left:-20px;
+ } */
+  /* .inline{
+    border-top: 1px solid red;
+    padding: 10px;
+  } */
+  h3{
+    padding: 30px 0px 0px 20px;
+  }
+ hr{
+     opacity: 0.4;
+ }
+ /*for input checkbox and label shopping to align them correctly*/
+ .inline{
+     display:flex;
+     align-items: center;
+     gap: 3px;
+     margin-left: 20px;
+  }
+ input:checked{
+     accent-color: #c2c2c2;
+      opacity: 0.3;
+      filter: invert(1); 
+    }
+   
+   input[type="checkbox"]{
+     width: 20px;
+     height: 20px;
+     opacity: 0.2;
+     margin-right: 5px;
+    
+   }
+   label{
+    
+     color: #424242;
+ }
+  
+ 
+ 
+ 
+ 
+ .card1>h3,.card2>h3{
+     color: #00A5EC;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ /* ket linethrough because the strikes for certain texts are different */
+ 
+ .linethrough1{
+     position: relative;
+     display: inline-block;
+     color: #c2c2c2;
+  }
+  .linethrough1::after{
+     content: "";
+     position: absolute;
+     display: block;
+     width: 95px;
+     height: 2px;
+     background-color: #c2c2c2;
+     top: 7px;
+  }
+ 
+ 
+  .linethrough2{
+     
+     position: relative;/*parent */
+   display: inline-block; /* its make sure that the elements wrap around the content only */
+   color: #c2c2c2;
+  
+    
+  
+ }
+ /*Draws a gray horizontal line across the text (acting as a strikethrough) */
+   .linethrough2::after {
+     content: "";
+     position: absolute; /*child */
+     display: block;
+     width: 140px; /* width of the line*/
+     height: 2px; /*Thickness of the line */
+     background-color: #c2c2c2;
+     top: 7px;
+     
+   }  
+   
+   
+  .linethrough3{
+     position: relative;
+     display: inline-block;
+     color: #c2c2c2;
+  }
+ 
+  .linethrough3::after{
+     content: "";
+     position: absolute;
+     display: block;
+     width: 121px;
+     height: 2px;
+     background-color: #c2c2c2;
+     top: 7px;
+     
+  }
+ 
+  
+  .card1:hover,.card2:hover{
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+ .bigdiv{
+     background-color: #f7f7f7;
+     height: 1000px;
+ }
+    </style>
+  </head>
+  <body>
+    <div class="bigdiv">
+    
+     
+    <nav>
+      <ul>
+        <li><h1>Tasks <span class="one">List</span></h1></li>
+      </ul>
+    </nav>
+ 
+   
+    <div class="container">
+      <div class="add">
+        <button class="btn">
+       <a href="./page2.html">
+        <div class="button-content">
+        <img src="./plus.png" alt="" class="img1" > <h4>Add New Task</h4>
+      </div>
+    </a> 
+        
+    </button>
+      </div>
+      <div class="cards">
+        <a href="./page2.html">
+        <div class="card1">
+            
+          
+          <h3>Trip to Paris</h3>
+          <br>
+          <!-- <hr class="line hr1" > -->
+       <hr>
+         
+    
+          <br />
+          <div class="inline" >
+            <input type="checkbox" checked />
+            <label class="linethrough1">Visit chruch</label>
+          </div>
+          <br />
+
+          <div class="inline">
+            <input type="checkbox" >
+            <label >
+                  Shopping</label>
+          </div>
+       
+        </div>
+      </a>
+        <div class="card1">
+          <h3>My To Do List</h3>
+          <br>
+          <hr class="line">
+          <br />
+          <div class="inline">
+            <input type="checkbox" checked />
+            <label class="linethrough2">Visit Supermarket</label>
+          </div>
+          <br />
+
+          <div class="inline" >
+            <input type="checkbox" >
+            <label>Buy Vegetables</label>
+          </div>
+        </div>
+        <div class="card1">
+          <h3>Movies i will watch</h3>
+          <br>
+          <hr class="line">
+          <br />
+          <div class="inline">
+            <input type="checkbox" checked />
+            <label class="linethrough2">Stranger Things 4</label>
+          </div>
+          <br />
+
+          <div class="inline">
+            <input type="checkbox" >
+            <label>Avengers Endgame</label>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div class="lastrow">
+        <div class="card2">
+          <h3>Daily Morning Routine</h3>
+          <br>
+          <hr class="line">
+          <br />
+
+          <div class="inline">
+            <input type="checkbox" checked />
+            <label class="linethrough3">Wake up at 6 AM</label>
+          </div>
+
+          <br />
+          <div class="inline">
+            <input type="checkbox" >
+            <label>Sleep at 10 PM</label>
+          </div>
+        </div>
+        <div class="card2">
+          <h3>Books To Read</h3>
+          <br>
+          <hr class="line">
+          <br>
+          <div class="inline">
+            <input type="checkbox" checked >
+            <label class="linethrough2">Desing of Everyday</label>
+          </div>
+          <br>
+          <div class="inline">
+            <input type="checkbox" >
+            <label>AIchemist</label>
+          </div>
+        </div>
+      </div>
+
+     
+   
+       
+    </div>
+ 
+</div>
+  </body>
+</html>

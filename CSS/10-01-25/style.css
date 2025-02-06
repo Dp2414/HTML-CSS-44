@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.parent
+{
+position: relative;
+}
+.card{
+    border: 1px solid red;
+    width: 150px;
+    height: 150;
+    margin: 10px;
+    text-align: center;
+    position: absolute;
+}
+.one
+{
+    background-color: blue;
+    z-index: 1;
+}
+.two{
+    background-color: aqua;
+    z-index: 2;
+    top:50px;
+
+left: 50px;
+}
+.three{
+    background-color: black;
+    z-index: 3;
+    top:75x;
+
+left: 75px;
+
+}
+.four
+{
+    background-color: green;
+    z-index: 4;
+    top:100px;
+
+left: 100px;
+}

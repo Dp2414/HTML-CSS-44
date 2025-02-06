@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #575757;
+  }
+  
+  .download-cv {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .download-cv:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    
+  }
+  
+  .intro {
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the column */
+  }
+  
+  .intro h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .intro h1 span {
+    color: #4CAF50;
+  }
+  
+  .intro p {
+    font-size: 24px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .intro p span {
+    color: #4CAF50;
+  }
+  
+  .say-hello {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .say-hello:hover {
+    background-color: #45a049;
+  }

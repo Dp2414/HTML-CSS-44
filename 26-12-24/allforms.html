@@ -1,0 +1,122 @@
+<!-- form without action,br,button,label,input (checkbox(it allows to takes multiple options),radio(it takes only one option))-->
+<!-- everything about inputs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="Name">Name:</label>
+    <input type="text" name="Name" id="Name" placeholder="Enter your name.." required>
+    <br>
+    <br>
+    <label for="email">Email :</label>
+    <input type="email" name="Email" id="email" placeholder="Enter your email.." required>
+    <label for="password">password :</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+    <input type="button" value="Submit"> <!--button does work but it wont show up any incomplete boxes, submit is used for it-->
+    
+    <br><br>
+    <button type="reset">Reset</button>
+    <label for="gender">Gender</label>
+        <input type="radio" name="sameValue" >Male
+        <input type="radio" name="sameValue" >Female
+        <input type="radio" name="sameValue" >Trans <br>
+    <label for="language">language :-</label>
+    <input type="checkbox" name="lan" id="language">Telugu
+    <input type="checkbox" name="lan" id="language">English
+    <input type="checkbox" name="language" id="language">Hindi
+    <label>Search: </label>
+    <input type="search" placeholder="Search here">
+    <label>Month: </label>
+    <input type="month"><br>
+    <label>Phone: </label>
+<input type="tel" placeholder="Enter phone number"><br>
+<label>Website: </label>
+<input type="url" placeholder="Enter URL"><br>
+<label>Age: </label>
+<input type="number" min="1" max="100" step="1"><br>
+<label>Search: </label>
+<input type="search" placeholder="Search here"><br>
+<label>Pick a color: </label>
+<input type="color"><br>
+<label>Date: </label>
+<input type="date"><br>
+<label>Date and Time: </label>
+<input type="datetime-local"><br>
+<label>Month: </label>
+<input type="month"><br>
+<label>Gender: </label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female <br>
+<label>Volume: </label>
+<input type="range" min="0" max="100"><br>
+<label>Upload File: </label>
+<input type="file"><br>
+<input type="hidden" value="12345"><br>
+<button>Click Me</button><br>
+<input type="submit" value="Submit"><br>
+<input type="image" src="submit.png" alt="Submit" width="50"><br>
+</form>
+<fieldset>
+    <!-- gives us a box or else we can say an outline  -->
+<legend><h1>Personal info</h1></legend>
+   <label>Name: </label><input type="text"><br>
+    <label>Email: </label><input type="email"><br>
+    <label>Birthday: </label><input type="date"><br>
+    <label>Upload Resume: </label><input type="file"><br>
+    <button type="submit">Submit</button> 
+
+</fieldset>
+
+<!-- forms with action -->
+ <h4>Basic Form with action Attribute</h4>
+<form action="submit_form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <button type="submit">Submit</button>
+    <!-- The data from the inputs (name and email) is sent to submit_form.php on the server.
+The method="post" indicates the HTTP POST method is used for sending the data. -->
+</form>
+<h4>action Attribute with External URL:-</h4>
+<form action="https://example.com/submit" method="get">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="query"><br>
+    <button type="submit">Search</button>
+    <!-- When submitted, the form sends the input data as a query string to the external URL (https://example.com/submit).
+Example URL after submission:
+https://example.com/submit?query=searchTerm -->
+</form><br>
+<h4> Form without action (Default Behavior):-</h4>
+<form method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <button type="submit">Login</button>
+    <!-- If action is omitted, the form submits to the current page URL.
+Useful for self-processing forms, where the same page processes the submitted data. -->
+
+</form>
+<h4>Form with File Upload:-</h4>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file"><br>
+    <button type="submit">Upload</button>
+    <!-- The enctype="multipart/form-data" allows file uploads.
+The form sends the selected file and other form data to /upload for processing. -->
+
+</form>
+<h4>Redirect to Another Page After Submission:- </h4>
+<form action="thank_you.html" method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <button type="submit">Submit</button>
+    <!-- After submission, the user is redirected to thank_you.html.
+Note: No data is processed unless JavaScript or back-end logic is included. -->
+</form>
+</body>
+</html>

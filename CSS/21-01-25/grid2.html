@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        padding: 50px;
+        width: 800px;
+        background-color: #dddddd;
+        height: vh;
+        gap: 10px;
+        margin: auto;
+        text-align: center;
+      }
+      .child {
+        text-align: center;
+        padding: 2px 0px;
+      }
+      .child4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child1"><img src="./1.png" alt="" /></div>
+      <div class="child child2"><img src="./2.png" alt="" /></div>
+      <div class="child child3"><img src="./3.png" alt="" /></div>
+      <div class="child child4"><img src="./4.png" alt="" /></div>
+      <div class="child child5"><img src="./5.png" alt="" /></div>
+    </div>
+  </body>
+</html>

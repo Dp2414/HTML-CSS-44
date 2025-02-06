@@ -1,0 +1,28 @@
+h1{
+    color: green;
+}
+
+.cs{
+    color: aqua;
+    background-color: brown;
+}
+
+
+.second{
+    color: rgb(24, 211, 49);
+}
+input{
+    background-color: black;
+}
+/* 
+#one{ 
+    color: black;
+} */
+input::placeholder {
+    color:red;
+    font-style: italic;
+    font-size: 14px;
+}
+input[type="text"]{
+    color: blue;
+}

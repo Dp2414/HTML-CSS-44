@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar
+        {
+            font-size: 30px;
+            background: aqua;
+
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+           
+        position: absolute;
+        right: 0;
+        }
+        .parent{
+            display: flex;
+            justify-content: space-around;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid grey;
+            opacity: 0.3;
+            margin-top: 40px;
+         cursor: pointer;
+         text-align: center;
+         padding: 30px;
+        }
+.child:hover{
+box-shadow: 5px 5px 5px red ;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar"> Tasks list </div>
+    <a href="">Add new task</a>
+    <div class="parent">
+        <div class="child"> Task 1</div>
+        <div class="child">Task2</div>
+        <div class="child">Task3</div>
+        <div class="child">Task4</div>
+   
+</div>
+</body>
+</html>

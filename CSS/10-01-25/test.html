@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>.container {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f0e68c;
+    position: relative;
+    padding: 0;
+}
+
+.card {
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    border: 2px solid;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.card1 {
+    position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            z-index:6; 
+}
+
+.card2 {
+    position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color:red;
+            z-index: 4;
+}
+
+.card3 {
+    position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color:green;
+            z-index: 2;
+}
+
+.text {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.card4, .card5, .card6 {
+    background-color: #f4a6a6;
+    width: 100px;
+    height: 50px;
+    top: 200px;
+    left: 20px;
+    
+}
+
+.card4 {
+    top: 200px;
+    z-index: 6;
+    top: 20px;
+    left: 20px;
+}
+
+.card5 {
+    top: 230px;
+    z-index: 4;
+    top: 40px;
+    left: 40px;
+}
+
+.card6 {
+    top: 260px;
+    z-index: 2;
+    top: 60px;
+    left: 60px;
+}</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1">z-index:6</div>
+        <div class="card card2">z-index:4</div>
+        <div class="card card3">z-index:2</div>
+        <div class="text">Change my z-index</div>
+        <div class="card card4">z-index:auto</div>
+        <div class="card card5">z-index:auto</div>
+        <div class="card card6">z-index:auto</div>
+       
+    </div>
+</body>
+</html>

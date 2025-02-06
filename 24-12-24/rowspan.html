@@ -1,0 +1,54 @@
+<!-- table,rowspan -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid;
+        
+    }
+ 
+    *{
+        place-items: center;
+    }
+</style>
+<body>
+    <h1>Example 1 of "rowspan" Attribute</h1>
+    <p>Electronic Device Table</p>
+    <table >
+        <tr>
+          <th>Device Id</th>
+          <th>Device Name</th>
+          <th>Device characteristics</th>
+        <th>Price per price</th>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>Refrigerator</td>
+            <td rowspan="2">Color = Silver, Quantity = 1</td>
+            <td>45,000</td>
+        </tr>
+        <tr>
+            <td>222</td>
+            <td>Air conditioner</td>
+        
+            <td>55,000</td>
+        </tr>
+        <tr>
+            <td>333</td>
+            <td >Microwave Oven</td>
+            <td rowspan="2">Color = Black,Quantity=2</td>
+            <td>27,000</td>
+        </tr>
+        <tr>
+            <td>444</td>
+            <td>Clothes Iron</td>
+            <td>6,000</td>
+        </tr>
+</table>
+</body>
+</html>

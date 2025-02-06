@@ -1,0 +1,12 @@
+*css animation allows the smooth transition between differernt states of an element without using js
+*if we use @keyframes animation works or else it wont works
+*key-properties
+{
+    1.@keyframes
+    2.animation name
+    3.animation-duration
+    4.animation-timing-function
+    5.animation-delay
+    6.animatio-iterationcount
+    7.animation-reverse
+}
