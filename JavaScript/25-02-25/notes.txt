@@ -1,0 +1,12 @@
+//what are operators
+operators in JavaScript are symbols that are used to perform operations on variables and values
+
+
+1.Arithmetic Operator
+2.Assignment Operator 
+3.Logical Operator
+4.Comparison Operator
+5.String Operator
+6.Ternary Operator
+7.typeof and instanceof
+8.Bitwise Operator
