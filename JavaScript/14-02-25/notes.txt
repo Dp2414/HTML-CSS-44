@@ -1,0 +1,10 @@
+js is both scripting and programming language(oops)
+* J.s is synchronous single threaded language
+js is most popular language
+js is forgiving language
+let and const has been introduced in Es6 version
+let can be reinitialized but cannot be redeclared
+let is blocked scope variable
+
+
+*const is blocked scope and it cannot be redeclared also cannot be reinitialized

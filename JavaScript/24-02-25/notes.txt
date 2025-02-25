@@ -1,0 +1,45 @@
+global,fuction and block 
+we should avoid using var because it is not a block scope 
+ rules of creating variables:-
+ var:- var is function-scoped when declared inside a function and global-scoped when declared outside any function. It can be re-declared and reassigned within the same scope.
+
+
+ let:= it is a block-scoped ,Variables are accessible only inside the {} block where they are declared.
+ ot can be reassigned but cannot be redeclared.
+
+ const:-const is used to create constants, it cant be reassigned or redeclared,it has to assign a value at the time of declaration
+
+ ==============Data Types=============
+ what are data types ?
+ data type means what type of data is being used
+
+ data types has been categorized in two ways and they are:
+ 1.primitive 
+ 2.Non-Primitive(user defined)
+
+ Es5 vs Es6
+ ES5-var and ES6-Let ,Const
+ ES5-five primitive and ES6-Symbol and bigInt
+
+ Non-primitive datatype
+ 1.array
+ 2.object
+ 3.Function 
+
+ everything in js is an object only
+
+1.Array:-
+An array in JavaScript is a type of global object used to store data. Arrays can store multiple values in a single variable, which can condense and organize our code
+
+array index value always starts from "0"
+object: key and value
+
+
+
+
+
+
+
+
+ to do :-
+ bigInt

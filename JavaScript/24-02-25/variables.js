@@ -1,0 +1,10 @@
+const accountId = 123;
+let accountEmail = "dfdjfj@gmail.com";
+var accountPassword = "1233434";
+accountCity = "hyderabad";
+accountCity = "red";
+let accountType;
+// console.log(accountPassword);
+// console.log(accountCity);
+// console.log(accountType);
+console.table([accountPassword, accountCity, accountType]);
