@@ -56,3 +56,41 @@ console.log(typeof [1,2,3]);
 let first="something";
 let last=" nothing";
 console.log(first+last);
+
+console.log(+true);
+console.log(+false);
+console.log(+"10");
+console.log(+null);
+
+//increment and decrement
+//++ and --
+
+//Postfix increment(x++) and prefix increment(++x)
+//Postfix Decrement(x--) and prefix decrement(--x)
+let x=10;
+console.log(x++); //10   11
+console.log(x--); //11  10
+console.log(x); //10
+console.log(++x); //11
+console.log(--x);//10
+
+console.log(x); //10
+
+let add=5;
+let result1=add++ + ++add + add-- + --add;
+console.log(result1);
+
+
+let $a=4;
+let $b=5;
+let $c=$a++ * --$b + ++$a * $b-- -$a-- * $b++;
+console.log($a,$b,$c);
+4*4+6*4-6*3
+16+24-18
+//4 5 a
+//4 b 
+//6 a
+//4 3b
+//6 5a
+//3 4b
+// 5a,4b,27
