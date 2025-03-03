@@ -1,0 +1,50 @@
+* Loops in javascript are used to execute of code repeatedl a block until a certain condition is met. They help in automating utomating repetitive tasks.
+Types of loops
+for loop while loop, do while loop, for in and for of loop.
+
+for loop
+
+
+
+for(let i=0;i<5;i++,i--) (i can be anything we can give any name)       
+{
+    console.log(i);
+}
+
+
+
+while loop is used to execute condition is tome. a brock of code as long as
+Syntax:
+while (condition){
+/ code to be executed.
+}
+
+do while:-
+Executes the code atleast once enea if the condition is false
+Syntax
+do {
+// code
+}
+while (condition)
+
+
+
+forin:-in:(object works only in for in loop)
+It is used to iterate over the properties of an
+(object) 
+let student=
+Syntax:
+for (let (keyin) object)
+
+(age): 25
+(name): 'John",
+1
+
+for of: - It
+is used to iterate over itrables & arrays (iteratable: string, object, map, set's ec)
+
+syntax:-
+for(let item of iterable)
+{
+    //code
+}
